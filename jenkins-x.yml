@@ -3,9 +3,6 @@ pipelineConfig:
   pipelines:
     release:
       pipeline:
-        options:
-          containerOptions:
-            workingDir: env 
         agent:
           image: rawlingsj/builder-go:wip2
         stages:
@@ -15,4 +12,4 @@ pipelineConfig:
                 image: rawlingsj/builder-go:wip2
                 command: jx
                 workingDir: env
-                args: ['step','helm','apply']
+                args: ['step','helm','apply','--dir','env']
