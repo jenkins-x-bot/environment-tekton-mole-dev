@@ -3,6 +3,8 @@ pipelineConfig:
   pipelines:
     release:
       pipeline:
+        agent:
+          image: rawlingsj/builder-go:wip1
         stages:
           - name: release
             steps:
