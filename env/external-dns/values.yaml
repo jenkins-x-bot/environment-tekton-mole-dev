@@ -1,0 +1,13 @@
+sources:
+- ingress
+
+provider: google
+
+google:
+  project: jenkins-x-infr
+  serviceAccount: external-dns
+
+rbac.create: true
+
+domainFilters:
+- jrawlings.co.uk
