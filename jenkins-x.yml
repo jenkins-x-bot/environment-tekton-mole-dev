@@ -3,9 +3,9 @@ pipelineConfig:
   pipelines:
     release:
       pipeline:
-	      options:
-        containerOptions:
-          workingDir: env 
+	options:
+          containerOptions:
+            workingDir: env 
         agent:
           image: rawlingsj/builder-go:wip2
         stages:
