@@ -1,9 +1,3 @@
-prow:
-  pipelinerunner:
-    image:
-      repository: rawlingsj/builder-maven
-      tag: wip48
-
 jenkins-x-platform:
   dockerRegistry: "gcr.io"
   PipelineSecrets:
