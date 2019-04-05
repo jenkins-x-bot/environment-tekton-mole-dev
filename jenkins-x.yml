@@ -9,7 +9,7 @@ pipelineConfig:
           - name: release
             steps:
               - name: helm-build
-                image: rawlingsj/builder-go:wip1
+                image: rawlingsj/builder-go:wip2
                 command: jx
                 workingDir: env
                 args: ['step','helm','apply']
