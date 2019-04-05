@@ -11,4 +11,4 @@ pipelineConfig:
               - name: helm-build
                 image: rawlingsj/builder-go:wip2
                 command: jx
-                args: ['step','helm','apply','--dir','/workspace/workspace/env']
+                args: ['step','helm','apply','--dir','/workspace/source/env']
