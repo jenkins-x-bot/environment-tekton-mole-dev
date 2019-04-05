@@ -1,0 +1,3 @@
+pipelineConfig: 
+  agent: 
+    container: rawlingsj/builder-go:wip1
