@@ -1,3 +1,8 @@
+prow:
+  pipelinerunner:
+    image:
+      repository: rawlingsj/builder-maven:wip48
+
 jenkins-x-platform:
   PipelineSecrets:
     DockerConfig: |-
