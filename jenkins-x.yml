@@ -8,11 +8,6 @@ pipelineConfig:
         stages:
           - name: release
             steps:
-              - name: sleep
-                image: rawlingsj/builder-go:wip3
-                command: sleep
-                args: ['5000']
-                dir: /workspace/source/env
               - name: helm-build
                 image: rawlingsj/builder-go:wip3
                 command: jx
