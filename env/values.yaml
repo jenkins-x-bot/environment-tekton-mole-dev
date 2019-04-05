@@ -1,7 +1,8 @@
 prow:
   pipelinerunner:
     image:
-      repository: rawlingsj/builder-maven:wip48
+      repository: rawlingsj/builder-maven
+      tag: wip48
 
 jenkins-x-platform:
   dockerRegistry: "gcr.io"
