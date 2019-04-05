@@ -60,3 +60,19 @@ jenkins-x-platform:
       size: 100Gi
   postinstalljob:
     enabled: "true"
+
+external-dns:
+  sources:
+  - ingress
+
+  provider: google
+
+  google:
+    project: jenkins-x-infra
+    serviceAccount: external-dns
+
+  rbac:
+    create: "true"
+
+  domainFilters:
+  - jrawlings.co.uk
