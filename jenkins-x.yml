@@ -1,3 +1,12 @@
-pipelineConfig: 
-  agent: 
-    container: rawlingsj/builder-go:wip1
+buildPack: none
+pipelineConfig:
+  pipelines:
+    release:
+      pipeline:
+        stages:
+          - name: release
+            steps:
+              - name: helm-build
+                image: rawlingsj/builder-go:wip1
+                command: jx
+                args: ['step','helm','build']
