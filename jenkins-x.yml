@@ -9,7 +9,7 @@ pipelineConfig:
           - name: release
             steps:
               - name: sleep
-                image: busybox
+                image: rawlingsj/builder-go:wip2
                 command: sleep
                 args: ['5000']
                 dir: /workspace/source/env
