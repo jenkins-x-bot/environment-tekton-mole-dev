@@ -3,7 +3,7 @@ pipelineConfig:
   pipelines:
     release:
       pipeline:
-	options:
+        options:
           containerOptions:
             workingDir: env 
         agent:
