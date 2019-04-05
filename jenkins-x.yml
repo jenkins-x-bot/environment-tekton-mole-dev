@@ -8,7 +8,7 @@ pipelineConfig:
         stages:
           - name: release
             steps:
-              - name: helm-build
+              - name: sleep
                 image: busybox
                 command: sleep
                 args: ['5000']
