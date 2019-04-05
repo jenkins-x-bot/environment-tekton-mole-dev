@@ -4,7 +4,7 @@ prow:
       repository: rawlingsj/builder-maven:wip48
 
 jenkins-x-platform:
-  dockerRegistry: ""
+  dockerRegistry: "gcr.io"
   PipelineSecrets:
     DockerConfig: |-
       {
