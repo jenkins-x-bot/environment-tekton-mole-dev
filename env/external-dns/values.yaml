@@ -8,7 +8,7 @@ google:
   serviceAccount: external-dns
 
 rbac:
-  create: true
+  create: "true"
 
 domainFilters:
 - jrawlings.co.uk
