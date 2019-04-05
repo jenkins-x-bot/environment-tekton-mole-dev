@@ -4,7 +4,7 @@ pipelineConfig:
     release:
       pipeline:
         agent:
-          image: rawlingsj/builder-go:wip2
+          image: rawlingsj/builder-go:wip3
         stages:
           - name: release
             steps:
