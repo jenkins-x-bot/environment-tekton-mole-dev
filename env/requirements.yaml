@@ -13,6 +13,7 @@ dependencies:
 - name: external-dns
   repository: https://charts.bitnami.com/bitnami
   version: 1.5.2
-- name: cert-manager
-  repository: https://charts.jetstack.io
-  version: 0.7.0
+# seems this chart setups up roles in kube-system namespace which we can't do via gitops and tillerless
+# - name: cert-manager
+#   repository: https://charts.jetstack.io
+#   version: 0.7.0
