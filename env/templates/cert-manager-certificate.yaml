@@ -1,0 +1,17 @@
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: Certificate
+metadata:
+  name: jrawlings-co-uk
+spec:
+  secretName: jrawlings-co-uk-tls
+  issuerRef:
+    name: letsencrypt-staging
+  commonName: '*.jrawlings.co.uk'
+  dnsNames:
+  - jrawlings.co.uk
+  acme:
+    config:
+    - dns01:
+        provider: prod-dns
+      domains:
+      - '*.jrawlings.co.uk'
