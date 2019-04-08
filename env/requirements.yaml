@@ -13,6 +13,10 @@ dependencies:
 - name: external-dns
   repository: https://charts.bitnami.com/bitnami
   version: 1.5.2
+- name: "chartmuseum"
+  repository: "http://chartmuseum.jenkins-x.io"
+  version: "1.1.4"
+  condition: "chartmuseum.enabled"
 # seems this chart setups up roles in kube-system namespace which we can't do via gitops and tillerless
 # - name: cert-manager
 #   repository: https://charts.jetstack.io
