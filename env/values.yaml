@@ -11,22 +11,6 @@ jenkins-x-platform:
               "staging-k8s.gcr.io": "gcloud"
           }
       }
-  chartmuseum:
-    enabled: true
-    env:
-      open:
-        AUTH_ANONYMOUS_GET: true
-        DISABLE_API: false
-        STORAGE: google
-        STORAGE_GOOGLE_BUCKET: chartmuseum.jenkins-x.io
-        STORAGE_GOOGLE_PREFIX: charts
-    gcp:
-      secret:
-        enabled: true
-        key: gcs-chartmuseum.key.json
-        name: gcs-jenkinsx-chartmuseum
-    image:
-      tag: v0.7.1
   controllerbuild:
     enabled: true
   jenkins:
@@ -76,3 +60,20 @@ external-dns:
 
   domainFilters:
   - jrawlings.co.uk
+
+chartmuseum:
+  enabled: true
+  env:
+    open:
+      AUTH_ANONYMOUS_GET: true
+      DISABLE_API: false
+      STORAGE: google
+      STORAGE_GOOGLE_BUCKET: chartmuseum.jenkins-x.io
+      STORAGE_GOOGLE_PREFIX: charts
+  gcp:
+    secret:
+      enabled: true
+      key: gcs-chartmuseum.key.json
+      name: gcs-jenkinsx-chartmuseum
+  image:
+    tag: v0.7.1
