@@ -2,7 +2,7 @@
 
 |App Metadata||
 |---|---|
-| **Version** | 0.0.14 |
+| **Version** | 0.0.16 |
 | **Description** | The Athens App for Jenkins X |
 | **Chart Repository** | http://chartmuseum.jenkins-x.io |
 
