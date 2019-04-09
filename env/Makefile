@@ -1,7 +1,7 @@
 init:
 	helm init --client-only
 	helm repo add jenkins-x http://chartmuseum.jenkins-x.io
-	helm repo add jenkins-x https://charts.bitnami.com/bitnami
+	helm repo add bitnami https://charts.bitnami.com/bitnami
 	
 
 build: clean init
