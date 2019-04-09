@@ -13,3 +13,16 @@ pipelineConfig:
                 command: jx
                 dir: /workspace/source/env
                 args: ['step','helm','apply']
+    pullRequest:
+      pipeline:
+        agent:
+          image: rawlingsj/builder-go:wip3
+        stages:
+          - name: release
+            steps:
+              - name: helm-build
+                image: rawlingsj/builder-go:wip3
+                command: make
+                dir: /workspace/source/env
+                args: ['build']
+
