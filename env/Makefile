@@ -1,7 +1,7 @@
 init:
 	helm init --client-only
 
-build: clean
+build: clean init
 	helm dependency build .
 	helm lint .
 
