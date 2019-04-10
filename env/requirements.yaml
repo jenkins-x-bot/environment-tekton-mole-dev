@@ -6,7 +6,7 @@ dependencies:
 - alias: prow
   name: prow
   repository: http://chartmuseum.jenkins-x.io
-  version: 0.0.465
+  version: 0.0.474
 - name: jenkins-x-platform
   repository: http://chartmuseum.jenkins-x.io
   version: 0.0.3833
