@@ -1,0 +1,7 @@
+connectors:
+  github:
+    config:
+      clientID: 441c143ab9b8d593e45d
+      clientSecret: d83ad785a0bb8cf42824cf45693f8e54440df0e2
+      orgs: []
+domain: infra.jrawlings.co.uk
