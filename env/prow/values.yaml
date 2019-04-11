@@ -11,7 +11,7 @@ pipelinerunner:
   enabled: "true"
   image:
     repository: rawlingsj80/builder-maven
-    tag: wip53
+    tag: wip60
 
 tillerNamespace: ""
 
