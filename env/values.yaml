@@ -76,3 +76,8 @@ external-dns:
 
   domainFilters:
   - jrawlings.co.uk
+  
+datadog:
+  datadog:
+    logsEnabled: "true"
+    logsConfigContainerCollectAll: "true"
