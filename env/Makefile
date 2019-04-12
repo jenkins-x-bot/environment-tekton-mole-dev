@@ -3,14 +3,9 @@ init:
 	helm repo add jenkins-x http://chartmuseum.jenkins-x.io
 	helm repo add bitnami https://charts.bitnami.com/bitnami
 	helm repo add stable https://kubernetes-charts.storage.googleapis.com
-	
 
 build: clean init
-	helm dependency build .
-	helm lint .
-
-lint:
-	helm dependency build .
+	jx step helm build
 	helm lint .
 
 clean: 
