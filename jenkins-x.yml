@@ -4,24 +4,24 @@ pipelineConfig:
     release:
       pipeline:
         agent:
-          image: gcr.io/jenkinsxio/builder-go:0.1.401
+          image: gcr.io/jenkinsxio/builder-go:0.1.402
         stages:
           - name: release
             steps:
               - name: helm-build
-                image: gcr.io/jenkinsxio/builder-go:0.1.401
+                image: gcr.io/jenkinsxio/builder-go:0.1.402
                 command: jx
                 dir: /workspace/source/env
                 args: ['step','helm','apply']
     pullRequest:
       pipeline:
         agent:
-          image: gcr.io/jenkinsxio/builder-go:0.1.401
+          image: gcr.io/jenkinsxio/builder-go:0.1.402
         stages:
           - name: release
             steps:
               - name: helm-build
-                image: pmuir/builder-go:wip2
+                image: gcr.io/jenkinsxio//builder-go:0.1.402
                 command: make
                 dir: /workspace/source/env
                 args: ['build']
