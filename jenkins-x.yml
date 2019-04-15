@@ -21,7 +21,7 @@ pipelineConfig:
           - name: release
             steps:
               - name: helm-build
-                image: gcr.io/jenkinsxio//builder-go:0.1.402
+                image: gcr.io/jenkinsxio/builder-go:0.1.402
                 command: make
                 dir: /workspace/source/env
                 args: ['build']
