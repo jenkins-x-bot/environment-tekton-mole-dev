@@ -5,6 +5,9 @@ buildnum:
   enabled: false
 pipelinerunner:
   enabled: "true"
+  image:
+    repository: gcr.io/jenkinsxio/builder-maven
+    tag: 0.1.406
 
 tillerNamespace: ""
 
