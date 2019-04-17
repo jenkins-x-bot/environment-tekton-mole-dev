@@ -4,12 +4,12 @@ pipelineConfig:
     release:
       pipeline:
         agent:
-          image: docker.io/rawlingsj80/builder-go:wip70
+          image: docker.io/rawlingsj80/builder-go:wip71
         stages:
           - name: release
             steps:
               - name: helm-build
-                image: docker.io/rawlingsj80/builder-go:wip70
+                image: docker.io/rawlingsj80/builder-go:wip71
                 command: jx
                 dir: /workspace/source/env
                 args: ['step','helm','apply']
