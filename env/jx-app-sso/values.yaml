@@ -1,6 +1,7 @@
-connectors:
-  github:
-    config:
-      clientID: vault:gitOps/jenkins-x/environment-tekton-mole-dev/connectors-github-config-clientid-secret:token-passthrough
-      clientSecret: vault:gitOps/jenkins-x/environment-tekton-mole-dev/connectors-github-config-clientsecret-secret:token-passthrough
-domain: infra.jrawlings.co.uk
+dex:
+  connectors:
+    github:
+      config:
+        clientID: vault:gitOps/jenkins-x/environment-tekton-mole-dev/connectors-github-config-clientid-secret:token-passthrough
+        clientSecret: vault:gitOps/jenkins-x/environment-tekton-mole-dev/connectors-github-config-clientsecret-secret:token-passthrough
+  domain: infra.jrawlings.co.uk
