@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: App
+metadata:
+  annotations:
+    jenkins.io/chart-description: ""
+    jenkins.io/chart-repository: http://chartmuseum.jenkins-x.io
+  creationTimestamp: null
+  labels:
+    jenkins.io/app-name: ffce112c-98a9-4bf0-ab8d-26972a243f3d
+    jenkins.io/app-version: 1.0.0
+  name: ffce112c-98a9-4bf0-ab8d-26972a243f3d
+spec:
+  schemaPreprocessor:
+    args:
+    - -c
+    - kubectl get configmap $VALUES_SCHEMA_JSON_CONFIG_MAP_NAME -o yaml | sed 's/abc/def/'
+      | kubectl replace -f -
+    command:
+    - /bin/sh
+    image: gcr.io/jenkinsxio/builder-go:0.1.332
+    name: ""
+    resources: {}
