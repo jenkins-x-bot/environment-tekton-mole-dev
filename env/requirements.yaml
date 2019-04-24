@@ -26,3 +26,6 @@ dependencies:
 - name: jx-app-sso
   repository: http://chartmuseum.jenkins-x.io
   version: 0.0.7
+- name: fe5e34ed-0654-4982-a6bb-f4425b031d52
+  repository: http://chartmuseum.jenkins-x.io
+  version: 1.0.0
