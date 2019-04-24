@@ -81,3 +81,5 @@ datadog:
   datadog:
     logsEnabled: "true"
     logsConfigContainerCollectAll: "true"
+
+featureFlagAPIKey: vault:gitOps/jenkins-x/environment-tekton-mole-dev/feature-flag-api-key:token-passthrough
