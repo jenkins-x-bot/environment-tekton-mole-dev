@@ -1,0 +1,5 @@
+ui:
+  sso:
+    certIssuerName: letsencrypt-prod
+    domain: infra.jrawlings.co.uk
+    oidcIssuerUrl: https://dex.infra.jrawlings.co.uk
