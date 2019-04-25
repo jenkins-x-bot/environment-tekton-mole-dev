@@ -9,7 +9,7 @@ dependencies:
   version: 0.0.500
 - name: jenkins-x-platform
   repository: http://chartmuseum.jenkins-x.io
-  version: 0.0.3877
+  version: 2.0.108
 - name: external-dns
   repository: https://charts.bitnami.com/bitnami
   version: 1.5.2
