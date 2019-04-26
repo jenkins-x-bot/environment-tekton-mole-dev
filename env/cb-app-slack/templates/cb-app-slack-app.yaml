@@ -1,0 +1,19 @@
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  annotations:
+    fabric8.io/expose: "true"
+    fabric8.io/ingress.annotations: 'kubernetes.io/ingress.class: nginx'
+    jenkins.io/chart-description: A Slack App for CloudBees Core
+    jenkins.io/chart-repository: https://chartmuseum.jx.charts-demo.cloudbees.com
+  creationTimestamp: null
+  labels:
+    app: cb-app-slack
+    chart: cb-app-slack-0.0.37
+    draft: draft-app
+    heritage: Tiller
+    jenkins.io/app-name: cb-app-slack
+    jenkins.io/app-version: 0.0.37
+    release: cb-app-slack
+  name: slackbots.slack.app.cloudbees.com
+spec: {}
