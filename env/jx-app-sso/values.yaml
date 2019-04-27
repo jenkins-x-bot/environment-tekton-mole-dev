@@ -7,4 +7,5 @@ dex:
   domain: dex.infra.jrawlings.co.uk
 
 sso-operator:
-  grpcHost: dex
+  dex:
+    grpcHost: dex
