@@ -8,4 +8,4 @@ dex:
 
 sso-operator:
   dex:
-    grpcHost: dex
+    grpcHost: dex.jx
