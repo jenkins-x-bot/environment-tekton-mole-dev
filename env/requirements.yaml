@@ -28,4 +28,4 @@ dependencies:
   version: 0.0.7
 - name: jx-app-ui
   repository: http://chartmuseum.jenkins-x.io
-  version: 0.0.9
+  version: 0.0.10
