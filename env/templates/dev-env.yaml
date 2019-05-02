@@ -39,8 +39,10 @@ spec:
       - '*'
       owner: jenkins-x-quickstarts
     storageLocations:
-    - classifier: default
-      bucketUrl: gs://jenkins-x-infra-results/
+    - bucketUrl: gs://jx-prod-logs
+      classifier: default
+    - bucketUrl: gs://jx-prod-logs
+      classifier: logs
     useGitOps: true
   webHookEngine: Prow
 status: {}
