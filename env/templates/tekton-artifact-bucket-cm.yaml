@@ -1,8 +1,8 @@
-apiVersion: v1
-data:
-  location: jx-infra-tekton
-  bucket.service.account.secret.name: tekton-artifact-bucket
-  bucket.service.account.secret.key: json
-kind: ConfigMap
-metadata:
-  name: config-artifact-bucket
+# apiVersion: v1
+# data:
+#   location: gcs://jx-infra-tekton
+#   bucket.service.account.secret.name: tekton-artifact-bucket
+#   bucket.service.account.secret.key: json
+# kind: ConfigMap
+# metadata:
+#   name: config-artifact-bucket
