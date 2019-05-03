@@ -7,6 +7,6 @@ metadata:
   creationTimestamp: null
   labels:
     jenkins.io/app-name: jx-app-ui
-    jenkins.io/app-version: 0.0.8
+    jenkins.io/app-version: 0.0.10
   name: jx-app-ui
 spec: {}
