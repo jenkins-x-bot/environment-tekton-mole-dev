@@ -85,7 +85,7 @@ datadog:
 featureFlagAPIKey: vault:gitOps/jenkins-x/environment-tekton-mole-dev/feature-flag-api-key:token-passthrough
 npmToken: vault:gitOps/jenkins-x/environment-tekton-mole-dev/npm-token:token-passthrough
 
-prometheus:
+jx-app-prometheus:
   nodeExporter:
     resources:
       limits:
