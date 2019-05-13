@@ -1,1 +1,3 @@
-{}
+sso-operator:
+  dex:
+    grpcHost: dex.jx
