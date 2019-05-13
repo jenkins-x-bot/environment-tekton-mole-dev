@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    config/checksum: 56d7a6ff2de99ec029ab4054207db514d2f9e3a44c61735090527b2894c64dd5
+    fabric8.io/expose: "true"
+    fabric8.io/ingress.annotations: 'kubernetes.io/ingress.class: nginx'
+    jenkins.io/chart-description: A Helm chart for bucketrepo service
+    jenkins.io/chart-repository: http://chartmuseum.jenkins-x.io
+  creationTimestamp: null
+  labels:
+    chart: bucketrepo-0.1.13
+    draft: draft-app
+    jenkins.io/app-name: bucketrepo
+    jenkins.io/app-version: 0.1.13
+  name: bucketrepo
+  namespace: jx
+spec: {}
