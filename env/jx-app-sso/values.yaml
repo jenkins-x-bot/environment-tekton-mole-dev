@@ -1,13 +1,1 @@
-dex:
-  connectors:
-    github:
-      config:
-        clientID: vault:gitOps/jenkins-x/environment-tekton-mole-dev/connectors-github-config-clientid-secret:token-passthrough
-        clientSecret: vault:gitOps/jenkins-x/environment-tekton-mole-dev/connectors-github-config-clientsecret-secret:token-passthrough
-        orgs:
-        - jenkins-x-dashboard
-  domain: dex.infra.jrawlings.co.uk
-
-sso-operator:
-  dex:
-    grpcHost: dex.jx
+{}
