@@ -1,0 +1,13 @@
+apiVersion: jenkins.io/v1
+kind: App
+metadata:
+  annotations:
+    jenkins.io/chart-description: A Helm chart for the Jenkins X Bucketrepo App
+    jenkins.io/chart-repository: http://chartmuseum.jenkins-x.io
+  creationTimestamp: null
+  labels:
+    chart: jx-app-bucketrepo-1.0.0-dev
+    jenkins.io/app-name: jx-app-bucketrepo
+    jenkins.io/app-version: 1.0.0-dev
+  name: jx-app-bucketrepo-jx-app-bucketrepo
+spec: {}

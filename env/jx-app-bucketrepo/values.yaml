@@ -1,0 +1,5 @@
+bucketrepo:
+  config:
+    storage:
+      bucketUrl: gs://bucketrepo
+      enabled: true

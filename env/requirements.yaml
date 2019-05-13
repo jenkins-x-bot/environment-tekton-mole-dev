@@ -38,3 +38,6 @@ dependencies:
 - name: cb-app-sor
   repository: https://chartmuseum.jx.charts-demo.cloudbees.com
   version: 0.0.2
+- name: jx-app-bucketrepo
+  repository: http://chartmuseum.jenkins-x.io
+  version: 1.0.0-dev
