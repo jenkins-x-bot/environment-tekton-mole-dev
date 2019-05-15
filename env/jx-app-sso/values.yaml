@@ -1,3 +1,11 @@
 sso-operator:
   dex:
     grpcHost: dex.jx
+
+dex:
+  domain: dex.infra.jrawlings.co.uk
+  connectors:
+    github:
+      config:
+        orgs:
+        - jenkins-x-dashboard
