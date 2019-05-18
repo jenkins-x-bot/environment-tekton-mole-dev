@@ -84,6 +84,8 @@ datadog:
 
 featureFlagAPIKey: vault:gitOps/jenkins-x/environment-tekton-mole-dev/feature-flag-api-key:token-passthrough
 npmToken: vault:gitOps/jenkins-x/environment-tekton-mole-dev/npm-token:token-passthrough
+cbNexusToken: vault:gitOps/jenkins-x/environment-tekton-mole-dev/cb-nexus-token:token
+cbNexusUsername: vault:gitOps/jenkins-x/environment-tekton-mole-dev/cb-nexus-token:username
 codecovToken: vault:gitOps/jenkins-x/environment-tekton-mole-dev/codecov:token-passthrough
 
 jx-app-prometheus:
