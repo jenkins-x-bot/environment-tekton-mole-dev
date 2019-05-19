@@ -6,9 +6,9 @@ metadata:
     jenkins.io/chart-repository: https://chartmuseum.jx.charts-demo.cloudbees.com
   creationTimestamp: null
   labels:
-    chart: jx-app-ui-0.0.702
+    chart: jx-app-ui-0.0.722
     jenkins.io/app-name: jx-app-ui
-    jenkins.io/app-version: 0.0.702
+    jenkins.io/app-version: 0.0.722
   name: jx-app-ui-jx-app-ui
 spec:
   schemaPreprocessor:
@@ -24,5 +24,5 @@ spec:
           key: domain
           name: ingress-config
     image: gcr.io/jenkinsxio/builder-go:0.1.435
-    name: ""
+    name: schema-preprocessor
     resources: {}
