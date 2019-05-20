@@ -6,9 +6,9 @@ metadata:
     jenkins.io/chart-repository: https://chartmuseum.jx.charts-demo.cloudbees.com
   creationTimestamp: null
   labels:
-    chart: jx-app-ui-0.0.726
+    chart: jx-app-ui-0.0.727
     jenkins.io/app-name: jx-app-ui
-    jenkins.io/app-version: 0.0.726
+    jenkins.io/app-version: 0.0.727
   name: jx-app-ui-jx-app-ui
 spec:
   schemaPreprocessor:
