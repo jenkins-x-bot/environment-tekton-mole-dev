@@ -1,6 +1,6 @@
 apiVersion: v1
 data:
-  jx-demo-sa.key.json: {{ .Values.JenkinsXDemoSA | b64enc | quote }}
+  jx-demo-sa.key.json: {{ .Values.JenkinsXDemoSA | quote }}
 kind: Secret
 metadata:
   name: jx-demo-sa
