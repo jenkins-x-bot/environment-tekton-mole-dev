@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  jx-demo-sa.key.json: {{ .Values.JenkinsXDemoSA | b64enc | quote }}
+kind: Secret
+metadata:
+  name: jx-demo-sa
+  namespace: jx
+type: Opaque
