@@ -96,14 +96,15 @@ akmsToken: vault:gitOps/jenkins-x/environment-tekton-mole-dev/amazon-kms-id:toke
 JenkinsXDemoSA: vault:gitOps/jenkins-x/environment-tekton-mole-dev/jenkins-x-demo-sa:data
 
 jx-app-prometheus:
-  nodeExporter:
-    resources:
-      limits:
-        cpu: 400m
-        memory: 256Mi
-      requests:
-        cpu: 200m
-        memory: 128Mi
-  server:
-    persistentVolume:
-      size: 500Gi
+  prometheus:
+    nodeExporter:
+      resources:
+        limits:
+          cpu: 400m
+          memory: 256Mi
+        requests:
+          cpu: 200m
+          memory: 128Mi
+    server:
+      persistentVolume:
+        size: 500Gi
