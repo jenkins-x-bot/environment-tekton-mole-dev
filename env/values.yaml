@@ -104,3 +104,6 @@ jx-app-prometheus:
       requests:
         cpu: 200m
         memory: 128Mi
+  server:
+    persistentVolume:
+      size: 500Gi
