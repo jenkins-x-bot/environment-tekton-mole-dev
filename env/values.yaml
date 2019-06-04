@@ -27,8 +27,13 @@ jenkins-x-platform:
         name: gcs-jenkinsx-chartmuseum
     image:
       tag: v0.7.1
+
   controllerbuild:
     enabled: true
+    image:
+      repository: gcr.io/jenkinsxio/builder-go
+      tag: 0.1.489
+
   jenkins:
     Agent:
       PodTemplates:
