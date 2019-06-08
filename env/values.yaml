@@ -32,7 +32,7 @@ jenkins-x-platform:
     enabled: true
     image:
       repository: gcr.io/jenkinsxio/builder-go
-      tag: 0.1.489
+      tag: 0.1.502
 
   jenkins:
     Agent:
