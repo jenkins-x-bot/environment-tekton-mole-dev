@@ -2,6 +2,6 @@
 
 |App Metadata||
 |---|---|
-| **Version** | 0.0.764 |
+| **Version** | 0.0.766 |
 | **Description** | A Helm chart for the Jenkins X SSO App |
 | **Chart Repository** | https://chartmuseum.jx.charts-demo.cloudbees.com |
