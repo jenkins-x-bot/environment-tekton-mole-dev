@@ -110,7 +110,3 @@ jx-app-prometheus:
     server:
       persistentVolume:
         size: 500Gi
-
-jx-app-athens:
-  athens-proxy:
-    replicaCount: 2 

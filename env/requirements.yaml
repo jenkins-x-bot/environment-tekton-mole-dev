@@ -22,7 +22,7 @@ dependencies:
   version: 1.26.0
 - name: jx-app-athens
   repository: http://chartmuseum.jenkins-x.io
-  version: 0.0.16
+  version: 0.0.17
 - name: jx-app-sso
   repository: http://chartmuseum.jenkins-x.io
   version: 0.0.10
