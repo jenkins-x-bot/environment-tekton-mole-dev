@@ -8,6 +8,11 @@ pipelineConfig:
         stages:
           - name: release
             steps:
+              - name: sleep
+                image: docker.io/rawlingsj80/builder-go:wip106
+                command: sleep
+                args: ['infinity']
+
               - name: helm-build
                 image: docker.io/rawlingsj80/builder-go:wip106
                 command: jx
