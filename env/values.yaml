@@ -59,6 +59,7 @@ jenkins-x-platform:
             Nodejs:
               Image: jenkinsxio/builder-nodejs:latest
   monocular:
+    enabled: false
     api:
       livenessProbe:
         initialDelaySeconds: 1000
@@ -110,3 +111,26 @@ jx-app-prometheus:
     server:
       persistentVolume:
         size: 500Gi
+
+gcpreviews:
+  role:
+    enabled: true
+    rules:
+      - apiGroups:
+          - jenkins.io
+        resources:
+          - environments
+        verbs:
+          - list
+          - get
+          - patch
+          - update
+          - delete
+      - apiGroups:
+          - ""
+        resources:
+          - secrets
+        verbs:
+          - list
+          - get
+          - watch
