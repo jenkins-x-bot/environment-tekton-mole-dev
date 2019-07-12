@@ -1,7 +1,7 @@
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
-  name: jx-e2e-gc
+  name: jx-version-stream-update
 spec:
   concurrencyPolicy: Forbid
   failedJobsHistoryLimit: 1
@@ -13,42 +13,31 @@ spec:
         metadata:
           creationTimestamp: null
           labels:
-            app: e2e-gc
+            app: jx-version-stream-update
             release: jx
         spec:
           containers:
           - args:
             - step
-            - e2e
-            - gc
-            - --project-id=jenkins-x-bdd2
+            - create
+            - pr
+            - versions
+            - --filter=\"*\"
             - --batch-mode
             command:
             - jx
-            env:
-            - name: JX_LOG_FORMAT
-              value: json
-            - name: GKE_SA_KEY_FILE
-              value: "/builder/home/bdd-credentials.json"
             image: gcr.io/jenkinsxio/builder-go:0.1.564
             imagePullPolicy: IfNotPresent
-            name: e2e-gc
+            name: jx-version-stream-update
             resources: {}
             terminationMessagePath: /dev/termination-log
             terminationMessagePolicy: File
-            volumeMounts:
-              - name: bdd-secret
-                mountPath: "/builder/home/"
-                readOnly: true
-          volumes:
-            - name: bdd-secret
-              secret:
-                secretName: bdd-secret
           dnsPolicy: ClusterFirst
           restartPolicy: Never
           schedulerName: default-scheduler
           securityContext: {}
           terminationGracePeriodSeconds: 30
-  schedule: 0/10 * * * *
+          serviceAccountName: tekton-bot
+  schedule: 0 */12 * * *
   successfulJobsHistoryLimit: 3
   suspend: false
