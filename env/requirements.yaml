@@ -32,9 +32,6 @@ dependencies:
 - name: jx-app-replicator
   repository: http://chartmuseum.jenkins-x.io
   version: 1.0.14
-- name: jx-app-prometheus
-  repository: http://chartmuseum.jenkins-x.io
-  version: 0.0.3
 - name: cb-app-sor
   repository: https://chartmuseum.jx.charts-demo.cloudbees.com
   version: 0.0.2
