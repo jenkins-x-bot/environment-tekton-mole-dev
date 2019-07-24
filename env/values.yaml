@@ -97,6 +97,8 @@ cbNexusUsername: vault:gitOps/jenkins-x/environment-tekton-mole-dev/cb-nexus-tok
 codecovToken: vault:gitOps/jenkins-x/environment-tekton-mole-dev/codecov:token-passthrough
 akmsToken: vault:gitOps/jenkins-x/environment-tekton-mole-dev/amazon-kms-id:token
 JenkinsXDemoSA: vault:gitOps/jenkins-x/environment-tekton-mole-dev/jenkins-x-demo-sa:data
+bbsToken: vault:gitOps/jenkins-x/environment-tekton-mole-dev/bit-bucket-server:token
+bbsUsername: vault:gitOps/jenkins-x/environment-tekton-mole-dev/bit-bucket-server:username
 
 jx-app-prometheus:
   prometheus:
