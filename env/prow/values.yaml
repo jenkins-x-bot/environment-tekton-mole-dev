@@ -3,9 +3,14 @@ auth:
     username: jenkins-x-bot
 buildnum:
   enabled: false
+  
+tillerNamespace: ""
+
 pipelinerunner:
   enabled: "true"
-tillerNamespace: ""
+  resources:
+    limits:
+      memory: 512Mi
 
 sinker:
   replicaCount: 0
