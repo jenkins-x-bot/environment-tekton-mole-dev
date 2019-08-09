@@ -32,6 +32,6 @@ dependencies:
 - name: jx-app-replicator
   repository: https://storage.googleapis.com/chartmuseum.jenkins-x.io
   version: 1.0.14
-# - name: cb-app-sor
-#   repository: https://chartmuseum.jx.charts-demo.cloudbees.com
-#   version: 0.0.2
+- name: jxui-backup
+  repository: http://chart.infra.jrawlings.co.uk
+  version: 0.0.4

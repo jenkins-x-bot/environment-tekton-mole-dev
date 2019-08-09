@@ -1,0 +1,12 @@
+apiVersion: jenkins.io/v1
+kind: App
+metadata:
+  annotations:
+    jenkins.io/chart-description: UI for the CloudBees Jxui V3 product
+    jenkins.io/chart-repository: http://chart.infra.jrawlings.co.uk
+  creationTimestamp: null
+  labels:
+    jenkins.io/app-name: jxui-backup
+    jenkins.io/app-version: 0.0.4
+  name: jxui-backup
+spec: {}
